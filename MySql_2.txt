@@ -1,0 +1,104 @@
+前倾回顾
+
+1. 基础概念
+   
+   * 为什么要用数据库
+   * 什么是数据库
+   * 数据库的分类 
+      关系型数据库  
+      非关系型数据库  
+
+      开源和非开源
+
+      大型，中型，小型
+
+   * 关系型数据库结构
+     
+     数据元素--》记录-->数据表--》数据库
+
+     数据库（database）
+     数据表（table）   
+     字段（column）
+     记录（row）
+
+2. mysql 
+  
+   特点  安装
+
+3. SQL
+
+   * 数据库操作
+     show databases；
+     create database dbName;
+     show create database dbName;
+     select database();
+     use db;
+     drop database db;
+
+   * 数据表操作
+     show tables
+     create table tableName (column1 type,column2 type);  
+     primary key  设置主键
+     auto_increment  自增
+     not null 不许为空
+     unsigned  对数字设置无符号
+     default  设置默认值
+
+     show create tables tableName;
+     desc table;
+     drop table tableName;
+
+   * 数据增删改查
+     insert  into  tableName ... values ...;
+     delete from tableName where ....
+     update tableName  set ... where ...
+     select ... from tableName where ...
+
+   * 表结构修改
+     alter table tableName add
+                           drop
+			   change
+			   modify
+			   rename
+
+4. 数据类型
+   
+   数字 ： 整数   浮点数    比特
+   字符串： char  varchar  blob  text  enum  set
+   时间
+
+5. where 子句的运算
+   
+   算术运算  + - * / %
+   比较运算  > < = >= <= !=  between  in  is null
+   逻辑运算  not  and   or  xor
+   位运算 ：<<  >> |  ^  &
+
+***********************************************
+
+二进制文件存储:
+
+ 1. 存储路径 （字符串）
+    
+    优点： 占用数据库空间小，使用方便
+    缺点： 数据容易丢失
+ 
+ 2. 存储文件 （二进制字串）
+    
+    优点 ： 不容易丢失
+    缺点 ： 占用数据库空间大，大文件读写速度慢
+ 
+
+练习 ： 
+      1. 创建一个数据表为user
+      2. 编写程序完成如下功能
+         
+	 * 注册，中终端输入用户名和密码，将用户名密码存入到数据库中，用户名不能重复
+
+	 * 登录，从终端输入用户名和密码，如果该用户存在则得到登录成功，不存在则得到登录失败
+       
+      3. 将数据库操作功能封装为类
+
+
+作业 ： 写完 登录注册 功能
+        整理mysql数据库知识点
