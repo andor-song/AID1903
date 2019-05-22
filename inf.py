@@ -1,5 +1,7 @@
 import sys
 
+import os #Tom
+
 print(sys.argv)
 
 for i in sys.argv:
