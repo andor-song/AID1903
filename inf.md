@@ -1,3 +1,7 @@
+##AID1903 git 学习
+
+> 学习内容包括git 和 github
+
 # 1. randrange() 方法返回指定递增基数集合中的一个随机数，基数缺省值为1
 
 # import random
