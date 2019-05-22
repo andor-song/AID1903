@@ -1,3 +1,10 @@
+import sys
+
+print(sys.argv)
+
+for i in sys.argv:
+    print(i)
+
 # 1. randrange() 方法返回指定递增基数集合中的一个随机数，基数缺省值为1
 
 # import random
@@ -58,43 +65,43 @@ if __name__ == '__main__':
 
     # 最终结果：最小2个
     # 把m1和m2的初始值变成一个极大的数
-     L = [1, 2, 3, 4, 5, 6, 7]
-     m1 = m2 = float('inf')
-     for x in range(0, len(L)):
-         if m1 > L[x]:
-             m2 = m1
-             m1 = L[x]
-         elif m2 > L[x]:
-             m2 = L[x]
-     print(m1, m2)
+    L = [1, 2, 3, 4, 5, 6, 7]
+    m1 = m2 = float('inf')
+    for x in range(0, len(L)):
+     if m1 > L[x]:
+         m2 = m1
+         m1 = L[x]
+     elif m2 > L[x]:
+         m2 = L[x]
+    print(m1, m2)
     #
     # # 最终结果：最大2个
     # # 把m1和m2的初始值变成一个极小的数
-     L = [8, 2, 3, 4, 5, 6, 7]
-     m1 = m2 = float('-inf')
-     for x in range(0, len(L)):
-         if m1 < L[x]:
-             m2 = m1
-             m1 = L[x]
-         elif m2 < L[x]:
-             m2 = L[x]
-     print(m1, m2)
+    L = [8, 2, 3, 4, 5, 6, 7]
+    m1 = m2 = float('-inf')
+    for x in range(0, len(L)):
+     if m1 < L[x]:
+         m2 = m1
+         m1 = L[x]
+     elif m2 < L[x]:
+         m2 = L[x]
+    print(m1, m2)
     #
     # # 备注：
     # # Python中可以用如下方式表示正负无穷：
-     print(float("inf"))
-     print(float("-inf"))
+    print(float("inf"))
+    print(float("-inf"))
     #
     # # 利用inf做简单加、乘算术运算仍会得到inf
-     print(1 + float('inf'))
-     print(2 * float('inf'))
+    print(1 + float('inf'))
+    print(2 * float('inf'))
     #
     # # 但是利用inf乘以0会得到not -a - number(NaN)：
-     print(0 * float("inf"))
+    print(0 * float("inf"))
     #
     # # 除了inf外的其他数除以inf，会得到0
-     print(889 / float('inf'))
-     print(float('inf') / float('inf'))
+    print(889 / float('inf'))
+    print(float('inf') / float('inf'))
     #
     # # 不等式： 当涉及 > 和 < 运算时， 所有数都比 - inf大 所有数都比 + inf小
     # # 等式： +inf和 + inf相等 - inf和 - inf相等
